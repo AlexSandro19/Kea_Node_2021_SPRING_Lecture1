@@ -26,21 +26,21 @@ const number = 1;
 // The result should be 2021
 // You cannot touch line 1 or 2
 
+//Difference between parseInt and Number : https://iaforek.medium.com/difference-between-number-and-parseint-in-javascript-77f3ae9b735b
+
 console.log(parseInt(year) + number);
-console.log(Number(year) + number);
-
-console.log(+ year + number);
-
+//Or create a variable first 
 const thisYear = parseInt(year) + number;
 console.log(thisYear);
 
+console.log(Number(year) + number);
+//Or create a variable first 
 const currentYear = Number(year) + number;
 console.log(currentYear);
 
-console.log(Number("123abc"));
-console.log(parseInt("123abc456"));
-
+// + before the string will convert it to number 
 console.log(+ year + number);
+
 
 
 // --------------------------------------

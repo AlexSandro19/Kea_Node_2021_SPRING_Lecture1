@@ -20,7 +20,7 @@ const anotherNumberTwo = "2.30";
 
 const solution = parseFloat(anotherNumberOne) + parseFloat(anotherNumberTwo);
 
-console.log(solution.toFixed(2));
+console.log(solution.toFixed(2));//the value (which is a float), will be converted to String
 
 // --------------------------------------
 // Exercise 5 - Decimals and average
@@ -43,10 +43,11 @@ console.log(average.toFixed(5));
 const letters = "abc";
 // Get me the character "c"
 
-console.log(letters.charAt(2));
+//Strings are immutable, so every time we call a method, a new string will be created 
+console.log(letters.charAt(2));//returns the caracter at specified index 
 console.log(letters[2]);
 
-console.log(letters.substr(2, 1));
+console.log(letters.substr(2, 1));// returns a substring from a given string. First parameter - from which index to start, second - the length of the substring
 
 
 // --------------------------------------
@@ -56,9 +57,9 @@ const fact = "You are learning javascript!";
 
 // capitalize the J in Javascript
 
-const changedText = fact.replace("j", "J");
+console.log(fact.replace("j", "J"));// replace method replaces the first paramter with second parameter. It replaces only the first instance in the string 
 
-console.log(changedText);
+
 
 // --------------------------------------
 
